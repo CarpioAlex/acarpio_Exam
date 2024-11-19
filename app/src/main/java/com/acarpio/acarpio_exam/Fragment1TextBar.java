@@ -19,6 +19,8 @@ public class Fragment1TextBar extends Fragment {
     @Override
     public View onCreateView( LayoutInflater inflater,  ViewGroup container, Bundle savedInstanceState) {
 
+        // Getting the views
+
         View view = inflater.inflate(R.layout.fragment1_text_bar, container, false);
 
 
@@ -26,11 +28,13 @@ public class Fragment1TextBar extends Fragment {
         EditText editText = view.findViewById(R.id.editText);
         SeekBar seekBar = view.findViewById(R.id.seekBar);
 
+        // Button listener
+
         changeText.setOnClickListener(v -> {
 
             String text = editText.getText().toString();
 
-
+            // Retrieving the target fragment
             fragment2 = (Fragment2TextResultado) getFragmentManager().findFragmentById(R.id.fragmentContainerView2);
 
 

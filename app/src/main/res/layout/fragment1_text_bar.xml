@@ -45,7 +45,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:backgroundTint="#B0B0B0"
-        app:cornerRadius="0dp"
-        android:text="Change Text" />
+        android:text="Change Text"
+        android:textColor="#000000"
+        app:cornerRadius="0dp" />
 
 </RelativeLayout>

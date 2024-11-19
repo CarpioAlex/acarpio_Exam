@@ -6,7 +6,7 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
-    <!-- Barra superior -->
+
     <LinearLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         android:orientation="horizontal"
         android:padding="8dp">
 
-        <!-- Título de la barra -->
+
         <TextView
             android:id="@+id/title"
             android:layout_width="0dp"
@@ -28,7 +28,7 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <!-- Ícono de la luna -->
+
         <ImageView
             android:id="@+id/moon_icon"
             android:layout_width="24dp"
@@ -37,7 +37,7 @@
             android:src="@drawable/moon"
             app:tint="@android:color/white" />
 
-        <!-- Ícono de la cara sonriente -->
+
         <ImageView
             android:id="@+id/smile_icon"
             android:layout_width="24dp"
@@ -54,7 +54,7 @@
         android:layout_weight="1"
         android:background="@color/blue_sky">
 
-        <!-- El Sol -->
+
         <ImageView
             android:id="@+id/sun"
             android:layout_width="100dp"
@@ -63,7 +63,7 @@
             android:layout_marginTop="150dp"
             android:src="@drawable/sun" />
 
-        <!-- El Mar -->
+
         <View
             android:id="@+id/mar"
             android:layout_width="match_parent"

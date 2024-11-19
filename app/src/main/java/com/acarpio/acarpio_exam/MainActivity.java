@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
         Intent myIntent = new Intent(this, SeekBar.class);
 
+
+        // Smile lambda that changes the activity
         smileIcon.setOnClickListener(v -> {
             startActivity(myIntent);
             finish();

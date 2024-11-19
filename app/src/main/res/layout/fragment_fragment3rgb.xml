@@ -65,8 +65,9 @@
         android:layout_below="@id/seekBarBlue"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
+        android:backgroundTint="#B0B0B0"
         android:text="Change Color"
-        app:cornerRadius="0dp"
-        android:backgroundTint="#B0B0B0" />
+        android:textColor="#000000"
+        app:cornerRadius="0dp" />
 
 </RelativeLayout>
