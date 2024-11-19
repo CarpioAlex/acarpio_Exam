@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:background="#B0B0B0"
+        android:layout_marginBottom="16dp" />
+
+    <SeekBar
+        android:id="@+id/seekBarRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separator"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:progressTint="#FF0000"
+        android:thumb="@drawable/circle_red"
+        android:progressDrawable="@drawable/progress_drawable"
+
+
+        />
+
+
+    <SeekBar
+        android:id="@+id/seekBarGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBarRed"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:progressTint="#00FF00"
+        android:thumb="@drawable/circle_green"
+        android:progressDrawable="@drawable/progress_drawable"
+
+
+        />
+
+
+    <SeekBar
+        android:id="@+id/seekBarBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBarGreen"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:progressTint="#0000FF"
+        android:thumb="@drawable/circle_blue"
+        android:backgroundTint="#898989"
+        android:progressDrawable="@drawable/progress_drawable"
+
+        />
+
+
+    <Button
+        android:id="@+id/changeColorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBarBlue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Change Color"
+        app:cornerRadius="0dp"
+        android:backgroundTint="#B0B0B0" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fullContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- Barra superior -->
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#3F51B5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Título de la barra -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Posta de Sol"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Ícono de la luna -->
+        <ImageView
+            android:id="@+id/moon_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/moon"
+            app:tint="@android:color/white" />
+
+        <!-- Ícono de la cara sonriente -->
+        <ImageView
+            android:id="@+id/smile_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/carita_feliz"
+            app:tint="@android:color/white" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/sky"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/blue_sky">
+
+        <!-- El Sol -->
+        <ImageView
+            android:id="@+id/sun"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/sun" />
+
+        <!-- El Mar -->
+        <View
+            android:id="@+id/mar"
+            android:layout_width="match_parent"
+            android:layout_height="267dp"
+            android:layout_gravity="bottom"
+            android:background="@color/sea_color" />
+
+    </FrameLayout>
+</LinearLayout>
